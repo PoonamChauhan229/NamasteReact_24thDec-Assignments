@@ -38,7 +38,9 @@ Framework:
 
 ## Q3.What is CDN? Why do we use it?
 A Content Delivery Network, or a CDN as it is commonly called, is an essential part of any modern website and application
+
 The content that you view on your phones today, on any website or app, videos or images, or any other kind of content, is very likely to be delivered using a content delivery network.
+
 A Content Delivery Network or a CDN is a globally-distributed network of servers that helps provide high-availability, faster performance, and security to websites distributing their content via it.
 
 Why do I need a CDN?
@@ -47,51 +49,65 @@ The number one reason for using a CDN is to improve your user’s experience in 
 Ensuring a consistent experience for all your users is important.
 
 A website may be hosted in a particular region, but if the majority of its users are coming from an entirely different region – e.g., if your site is hosted in North America, GTmetrix might report fast speeds based on our default test location, but if a good chunk of your users come from Europe, their speed will not be as fast as you experience it to be.
+
 CDNs not only ensure a faster experience to your users, but they also help to prevent site crashes in the event of traffic surges – CDNs help to distribute bandwidth across multiple servers, instead of allowing one server to handle all traffic
 
-Improve page load speed
-Handle high traffic loads
-Block spammers, scrapers
-Localize coverage without the cost
-Reduce bandwidth consumption
-Load balance between multiple servers
-Secure the application
+- Improve page load speed
+- Handle high traffic loads
+- Block spammers, scrapers
+- Localize coverage without the cost
+- Reduce bandwidth consumption
+- Load balance between multiple servers
+- Secure the application
 
 
 ## Q4.Why is React known as React?
 React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces.
+
 React is named React because of its ability to react to changes in data. When the data in a React component changes, React will automatically re-render the component so that it reflects the new data. This makes it easy to create performant user interfaces that always look up-to-date
+
 React makes it painless to create interactive UIs.
+
 Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
 
 ## Q5.What is crossorigin in script tag?
 The crossorigin attribute on a <script> tag specifies that CORS is supported when loading an external script file from a third party server or domain.
 
 The purpose of crossorigin attribute is used to share the resources from one domain to another domain.
+
 Basically, it is used to handle the CORS request.
+
 It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains
 
 CORS is a standard mechanism used to retrieve files from other domains.
 
 Using crossorigin
-The crossorigin attribute specifies that the script element supports CORS.
-CORS stands for Cross Origin Resource Sharing.
-CORS is a standard mechanism to retrieve files from a third party domain or server.
-If specified, the script file request will be sent with or without credentials.
-This attribute is only relevant when the script is retrieved from a third party server. Do not use this attribute when these files are on your own server.
+- The crossorigin attribute specifies that the script element supports CORS.
+- CORS stands for Cross Origin Resource Sharing.
+- CORS is a standard mechanism to retrieve files from a third party domain or server.
+- If specified, the script file request will be sent with or without credentials.
+- This attribute is only relevant when the script is retrieved from a third party server. Do not use this attribute when these files are on your own server.
 
 <script type="text/javascript" src="my_script.js" crossorigin="anonymous"></script>
-Values: This attribute contains two values which are given below –
-anonymous: It has a default value. It defines a CORS request which will be sent without passing the credential information.
-use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
+
+- Values: This attribute contains two values which are given below
+
+1. anonymous: It has a default value. It defines a CORS request which will be sent without passing the credential information.
+2. use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
 
 ## Q6.What is diference between React and ReactDOM
 React contains functionality utilised in web and mobile apps.
+
 The reason React and ReactDOM were split into two libraries was due to the arrival of React Native. 
+
 ReactDOM functionality is utilised only in web apps
+
 When building web applications in React, we use two packages—react and react-dom
+
 React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+
 React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+
 Including Scripts: Following are the CDN links for React and ReactDOM:
 
 React: https://cdnjs.com/libraries/react
