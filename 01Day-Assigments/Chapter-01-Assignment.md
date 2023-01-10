@@ -1,8 +1,8 @@
 ## Q1.What is Emmet?
- Emmet is a built-in feature in Visual Studio Code. 
- We don’t have to install any extensions for emmet support.
- Emmet prevents us from writing the entire code by yourself by providing Emmet abbreviation.
- Emmet is enabled by default in html, haml, pug, slim, jsx, xml, xsl, css, scss, sass, less and stylus files, and also in languages that inherits from any of the above like handlebars and PHP.
+- Emmet is a built-in feature in Visual Studio Code. 
+- We don’t have to install any extensions for emmet support.
+- Emmet prevents us from writing the entire code by yourself by providing Emmet abbreviation.
+- Emmet is enabled by default in html, haml, pug, slim, jsx, xml, xsl, css, scss, sass, less and stylus files, and also in languages that inherits from any of the above like handlebars and PHP.
 
 ## Q2. Difference between a Library and Framework?
 Library:
@@ -43,7 +43,7 @@ The content that you view on your phones today, on any website or app, videos or
 
 A Content Delivery Network or a CDN is a globally-distributed network of servers that helps provide high-availability, faster performance, and security to websites distributing their content via it.
 
-Why do I need a CDN?
+### Why do I need a CDN?
 The number one reason for using a CDN is to improve your user’s experience in terms of speed, and as we know – speed matters!
 
 Ensuring a consistent experience for all your users is important.
@@ -81,7 +81,7 @@ It is used to handle the CORS request that checks whether it is safe to allow fo
 
 CORS is a standard mechanism used to retrieve files from other domains.
 
-Using crossorigin
+### Using crossorigin
 - The crossorigin attribute specifies that the script element supports CORS.
 - CORS stands for Cross Origin Resource Sharing.
 - CORS is a standard mechanism to retrieve files from a third party domain or server.
@@ -90,7 +90,7 @@ Using crossorigin
 
 <script type="text/javascript" src="my_script.js" crossorigin="anonymous"></script>
 
-- Values: This attribute contains two values which are given below
+### Values: This attribute contains two values which are given below
 
 1. anonymous: It has a default value. It defines a CORS request which will be sent without passing the credential information.
 2. use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
@@ -114,6 +114,7 @@ React: https://cdnjs.com/libraries/react
 ReactDOM: https://cdnjs.com/libraries/react-dom
 
 <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
 ## Q7.hat is difference between react.development.js and react.production.js files via CDN?
