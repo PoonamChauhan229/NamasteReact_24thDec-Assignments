@@ -117,5 +117,5 @@ ReactDOM: https://cdnjs.com/libraries/react-dom
 
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
-## Q7.hat is difference between react.development.js and react.production.js files via CDN?
+## Q7.What is difference between react.development.js and react.production.js files via CDN?
 
