@@ -141,13 +141,19 @@ ReactDOM: https://cdnjs.com/libraries/react-dom
 
 When the web page is loaded, the web browser looks at the entire HTML document and looks for any CSS, JavaScript and images that are referenced by that page. This is what we refer as HTML Parsing
 
+<<<<<<< HEAD
 - Normally when html parsing is done and script is encountered, parsing is kept on hold. It loads the script and compiles it and the parsing is then resumed.
 - The web browser starts parsing the HTML and it gets paused when the script tag is reached
 - At that point, parsing of HTML is blocked and browser makes a request to fetch/download the respective script file. Once the script is fetched, it gets executed and then HTML parsing resumes again.
 - But this is not good as the JavaScript files are blocking the rendering of HTML. So this is where we can introduce our two attributes ‘async’ and ‘defer’.
+=======
+Normally when html parsing is done and script is encountered, parsing is kept on hold. It loads the script and compiles it and the parsing is then resumed.
+![1](https://user-images.githubusercontent.com/68181154/211781570-2fab65d6-839b-4518-9ad3-86d370c46bb0.png)
+>>>>>>> 26dce44d48b309bc031ab3bf2610a9310acc6220
 
 Image 1 to be added.
 
+<<<<<<< HEAD
 ### async
 - In case of async, the script is loaded parallelly and once loaded, parsing is halted, script is compiled and after that parsing is resumed.
 - With async (asynchronous) attribute, the HTML parsing continues until the browser fetches the script file over the network so parsing and script fetching happens in parallel
@@ -169,3 +175,6 @@ Well, you can use async attribute when your page does not depend on the script f
 
 ### Final Thoughts
 Now that we have async and defer attributes, we can put our script references in head tag and as this allows your scripts to be downloaded asap without blocking your browser. If you are not using these keywords, make sure to put it at the bottom before closing your body tag. This will ensure that the HTML parser is not blocked by the scripts.
+=======
+In case of defer, the script is loaded parallelly but compilation is only done when whole parsing is done
+>>>>>>> 26dce44d48b309bc031ab3bf2610a9310acc6220
