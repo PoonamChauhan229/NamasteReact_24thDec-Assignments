@@ -1,4 +1,4 @@
-s## Q1.What is Emmet?
+## Q1.What is Emmet?
 - Emmet is a built-in feature in Visual Studio Code. 
 - We don’t have to install any extensions for emmet support.
 - Emmet prevents us from writing the entire code by yourself by providing Emmet abbreviation.
@@ -140,21 +140,24 @@ ReactDOM: https://cdnjs.com/libraries/react-dom
 ## Q8.What is async and defer?
 
 When the web page is loaded, the web browser looks at the entire HTML document and looks for any CSS, JavaScript and images that are referenced by that page. This is what we refer as HTML Parsing
+### async
+- In case of async, the script is loaded parallelly and once loaded, parsing is halted, script is compiled and after that parsing is resumed.
+- With async (asynchronous) attribute, the HTML parsing continues until the browser fetches the script file over the network so parsing and script fetching happens in parallel
+- Once the scripts are available in the browser, HTML parsing is paused and scripts are executed. Once the execution is complete, HTML parsing continues
+- So this is an asynchronous way of downloading scripts
 
-<<<<<<< HEAD
-- Normally when html parsing is done and script is encountered, parsing is kept on hold. It loads the script and compiles it and the parsing is then resumed.
-- The web browser starts parsing the HTML and it gets paused when the script tag is reached
-- At that point, parsing of HTML is blocked and browser makes a request to fetch/download the respective script file. Once the script is fetched, it gets executed and then HTML parsing resumes again.
-- But this is not good as the JavaScript files are blocking the rendering of HTML. So this is where we can introduce our two attributes ‘async’ and ‘defer’.
-=======
-Normally when html parsing is done and script is encountered, parsing is kept on hold. It loads the script and compiles it and the parsing is then resumed.
-![1](https://user-images.githubusercontent.com/68181154/211781570-2fab65d6-839b-4518-9ad3-86d370c46bb0.png)
+Image 2 to be addded
+
+### defer
+- In case of defer, the script is loaded parallelly but compilation is only done when whole parsing is done
+- The word ‘defer’ in English means to ‘hold back’. So with defer attribute mentioned in the script tag, the script files are downloaded in parallel while the HTML parsing continues
+- But the execution is deferred until the HTML parsing is done.
+- In simple words, the downloaded scripts are executed only when the browser finishes its HTML parsing.
+
+Image 3 to be added
 
 ### When to use ‘async’ and when to use ‘defer’?
 Well, you can use async attribute when your page does not depend on the script files (for example analytics). Why? Because async cannot guarantee the order in which your scripts files will be downloaded. So if there is any dependency amongst your script files, it may break your code. In such cases you can use defer attribute.
 
 ### Final Thoughts
 Now that we have async and defer attributes, we can put our script references in head tag and as this allows your scripts to be downloaded asap without blocking your browser. If you are not using these keywords, make sure to put it at the bottom before closing your body tag. This will ensure that the HTML parser is not blocked by the scripts.
-=======
-In case of defer, the script is loaded parallelly but compilation is only done when whole parsing is done
->>>>>>> 26dce44d48b309bc031ab3bf2610a9310acc6220
