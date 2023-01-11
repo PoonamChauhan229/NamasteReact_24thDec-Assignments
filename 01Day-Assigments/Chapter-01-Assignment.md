@@ -1,4 +1,4 @@
-## Q1.What is Emmet?
+s## Q1.What is Emmet?
 - Emmet is a built-in feature in Visual Studio Code. 
 - We don’t have to install any extensions for emmet support.
 - Emmet prevents us from writing the entire code by yourself by providing Emmet abbreviation.
@@ -119,3 +119,31 @@ ReactDOM: https://cdnjs.com/libraries/react-dom
 
 ## Q7.What is difference between react.development.js and react.production.js files via CDN?
 
+### react.development.js
+- Development mode includes useful warnings and gives you access to tools that make development and debugging easier.
+- The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds.
+- The versions are only meant for development, and are not suitable for production. 
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+### react.production.js
+- Production mode minifies your code and better represents the performance your app will have on end users' devices.
+- The production build runs in production mode which means this is the code running on your client's machine.
+- Minified and optimized production versions of React are available at
+- To deploy the application in the production environment, use below scripts.
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+## Q8.What is async and defer?
+
+When the web page is loaded, the web browser looks at the entire HTML document and looks for any CSS, JavaScript and images that are referenced by that page. This is what we refer as HTML Parsing
+
+Normally when html parsing is done and script is encountered, parsing is kept on hold. It loads the script and compiles it and the parsing is then resumed.
+![Standard Link][https://miro.medium.com/max/720/1*wLbyFIE-sqSjdPVUtawiZQ.webp]
+
+In case of async, the script is loaded parallelly and once loaded, parsing is halted, script is compiled and after that parsing is resumed.
+
+In case of defer, the script is loaded parallelly but compilation is only done when whole parsing is done
