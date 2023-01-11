@@ -140,13 +140,19 @@ ReactDOM: https://cdnjs.com/libraries/react-dom
 ## Q8.What is async and defer?
 
 When the web page is loaded, the web browser looks at the entire HTML document and looks for any CSS, JavaScript and images that are referenced by that page. This is what we refer as HTML Parsing
+  
+The web browser starts parsing the HTML and it gets paused when the script tag is reached. At that point, parsing of HTML is blocked and browser makes a request to fetch/download the respective script file. Once the script is fetched, it gets executed and then HTML parsing resumes again.
+  
+  ![1](https://user-images.githubusercontent.com/68181154/211799594-34a2d542-e1c9-4b8a-ae93-8e4fe715d931.png)
+  
 ### async
 - In case of async, the script is loaded parallelly and once loaded, parsing is halted, script is compiled and after that parsing is resumed.
-- With async (asynchronous) attribute, the HTML parsing continues until the browser fetches the script file over the network so parsing and script fetching happens in parallel
+- With async (asynchronous) attribute, the HTML parsing continues until the
+ browser fetches the script file over the network so parsing and script fetching happens in parallel
 - Once the scripts are available in the browser, HTML parsing is paused and scripts are executed. Once the execution is complete, HTML parsing continues
 - So this is an asynchronous way of downloading scripts
 
-Image 2 to be addded
+![2](https://user-images.githubusercontent.com/68181154/211799672-eec34c35-f13a-4632-8519-52267194adaa.png)
 
 ### defer
 - In case of defer, the script is loaded parallelly but compilation is only done when whole parsing is done
@@ -154,10 +160,16 @@ Image 2 to be addded
 - But the execution is deferred until the HTML parsing is done.
 - In simple words, the downloaded scripts are executed only when the browser finishes its HTML parsing.
 
-Image 3 to be added
+![3](https://user-images.githubusercontent.com/68181154/211799736-77d012b3-4164-4282-8cd6-24c7f7602a52.png)
 
 ### When to use ‘async’ and when to use ‘defer’?
 Well, you can use async attribute when your page does not depend on the script files (for example analytics). Why? Because async cannot guarantee the order in which your scripts files will be downloaded. So if there is any dependency amongst your script files, it may break your code. In such cases you can use defer attribute.
 
 ### Final Thoughts
 Now that we have async and defer attributes, we can put our script references in head tag and as this allows your scripts to be downloaded asap without blocking your browser. If you are not using these keywords, make sure to put it at the bottom before closing your body tag. This will ensure that the HTML parser is not blocked by the scripts.
+  
+![async-and-defer-attributes-in-javascript-1-1653148914](https://user-images.githubusercontent.com/68181154/211800172-5c56dedf-87e3-4e9a-aeeb-5ff61857a349.png)
+  
+![async-and-defer-attributes-in-javascript-0-1653148914](https://user-images.githubusercontent.com/68181154/211800185-e8c38bb6-c807-447d-aeb4-5166d6343f74.png) 
+
+![aysnc and defer](https://user-images.githubusercontent.com/68181154/211800285-01d9e8a6-70a8-45f9-bd47-80acfa4ca827.png)
