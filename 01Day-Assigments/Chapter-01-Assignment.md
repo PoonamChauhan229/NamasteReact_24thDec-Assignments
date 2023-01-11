@@ -142,7 +142,7 @@ ReactDOM: https://cdnjs.com/libraries/react-dom
 When the web page is loaded, the web browser looks at the entire HTML document and looks for any CSS, JavaScript and images that are referenced by that page. This is what we refer as HTML Parsing
 
 Normally when html parsing is done and script is encountered, parsing is kept on hold. It loads the script and compiles it and the parsing is then resumed.
-![Standard Link][https://miro.medium.com/max/720/1*wLbyFIE-sqSjdPVUtawiZQ.webp/to/img.png]
+![1](https://user-images.githubusercontent.com/68181154/211781570-2fab65d6-839b-4518-9ad3-86d370c46bb0.png)
 
 In case of async, the script is loaded parallelly and once loaded, parsing is halted, script is compiled and after that parsing is resumed.
 
