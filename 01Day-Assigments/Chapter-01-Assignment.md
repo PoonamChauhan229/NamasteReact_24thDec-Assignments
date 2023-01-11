@@ -173,3 +173,5 @@ Now that we have async and defer attributes, we can put our script references in
 ![async-and-defer-attributes-in-javascript-0-1653148914](https://user-images.githubusercontent.com/68181154/211800185-e8c38bb6-c807-447d-aeb4-5166d6343f74.png) 
 
 ![aysnc and defer](https://user-images.githubusercontent.com/68181154/211800285-01d9e8a6-70a8-45f9-bd47-80acfa4ca827.png)
+
+
