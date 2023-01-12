@@ -21,4 +21,5 @@ https://parceljs.org/features/development/
 Documentation:
 https://parceljs.org/getting-started/webapp/
 
+![parcel](https://user-images.githubusercontent.com/68181154/212066086-00847659-5cc7-4c6f-90fe-d9d25b34aad1.png)
 
